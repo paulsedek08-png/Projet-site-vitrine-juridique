@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>Tableau de bord — Cabinet NIC</title>
+		<link rel="stylesheet" href="../css/style.css">
+	</head>
+	<body class="admin-shell" data-dashboard>
+		<header class="admin-header">
+			<div class="container header-inner">
+				<a class="brand" href="dashboard.html">
+					<span class="brand__mark">NIC</span>
+					<span>Administration</span>
+				</a>
+				<button class="button button--outline" data-logout>Déconnexion</button>
+			</div>
+		</header>
+
+		<main class="container admin-main">
+			<div data-flash hidden></div>
+			<div class="section-heading">
+				<span class="eyebrow">Vue d'ensemble</span>
+				<h2>Tableau de bord</h2>
+			</div>
+
+			<section class="stats-grid">
+				<article class="stat-card">
+					<span>Documents</span>
+					<strong data-stat="documents">—</strong>
+				</article>
+				<article class="stat-card">
+					<span>Transactions</span>
+					<strong data-stat="transactions">—</strong>
+				</article>
+				<article class="stat-card">
+					<span>Clients</span>
+					<strong data-stat="clients">—</strong>
+				</article>
+				<article class="stat-card">
+					<span>Chiffre d'affaires</span>
+					<strong data-stat="revenue">—</strong>
+				</article>
+			</section>
+
+			<div class="table-wrap">
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Transaction</th>
+							<th>Client</th>
+							<th>Montant</th>
+							<th>Statut</th>
+						</tr>
+					</thead>
+					<tbody data-transactions>
+						<tr>
+							<td colspan="4">Chargement…</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</main>
+
+		<script type="module" src="../js/admin.js"></script>
+	</body>
+</html>

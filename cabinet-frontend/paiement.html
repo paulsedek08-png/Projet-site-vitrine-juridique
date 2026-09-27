@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>Paiement — Cabinet NIC</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<header class="site-header">
+			<div class="container header-inner">
+				<a class="brand" href="index.html">
+					<span class="brand__mark">NIC</span>
+					<span>Cabinet Juridique</span>
+				</a>
+			</div>
+		</header>
+
+		<main class="section">
+			<form class="form-card" data-payment-form>
+				<span class="eyebrow">Paiement sécurisé</span>
+				<h2>Vos informations</h2>
+				<div data-flash hidden></div>
+				<div class="form-grid">
+					<input type="hidden" name="document_id">
+					<div class="field">
+						<label>Nom complet</label>
+						<input name="client_name" required autocomplete="name">
+					</div>
+					<div class="field">
+						<label>Adresse e-mail</label>
+						<input name="email" type="email" required autocomplete="email">
+					</div>
+					<div class="field">
+						<label>Téléphone Mobile Money</label>
+						<input name="phone" required placeholder="+242 06 000 00 00">
+					</div>
+					<div class="field">
+						<label>Opérateur</label>
+						<select name="operator" required>
+							<option value="">Choisir</option>
+							<option value="mtn">MTN Mobile Money</option>
+							<option value="airtel">Airtel Money</option>
+						</select>
+					</div>
+					<div class="field field--full">
+						<button class="button button--gold" type="submit">
+							Continuer vers le paiement
+						</button>
+					</div>
+				</div>
+			</form>
+		</main>
+
+		<script type="module" src="js/payment.js"></script>
+	</body>
+</html>
+

@@ -1,0 +1,65 @@
+<!doctype html> 
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Catalogue — Cabinet NIC</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="container header-inner">
+                <a class="brand" href="index.html">
+                    <span class="brand__mark">NIC</span>
+                    <span>Cabinet Juridique</span>
+                </a>
+                <button class="menu-button" data-menu-button>☰</button>
+                <nav class="nav" data-nav>
+                    <a href="index.html">Accueil</a>
+                    <a href="catalogue.html">Catalogue</a>
+                    <a href="admin/login.html">Administration</a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section class="catalogue-head">
+                <div class="container">
+                    <span class="eyebrow">Ressources</span>
+                    <h1>Catalogue juridique</h1>
+                    <div class="filters">
+                        <input
+                            class="field"
+                            data-search
+                            type="search"
+                            placeholder="Rechercher un document…"
+                        >
+                        <select data-category>
+                            <option value="">Toutes les catégories</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container">
+                    <div data-flash hidden></div>
+                    <div class="document-grid" data-documents>
+                        <div class="empty">Chargement du catalogue…</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container footer-inner">
+                <strong>Cabinet NIC</strong>
+                <span>Documents sécurisés</span>
+            </div>
+        </footer>
+
+        <script type="module" src="js/ui.js"></script>
+        <script type="module" src="js/documents.js"></script>
+    </body>
+</html>
+

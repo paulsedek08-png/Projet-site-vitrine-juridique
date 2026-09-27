@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>Connexion administration — Cabinet NIC</title>
+		<link rel="stylesheet" href="../css/style.css">
+	</head>
+	<body class="admin-shell">
+		<main class="section">
+			<form class="form-card" data-login-form>
+				<span class="eyebrow">Espace protégé</span>
+				<h2>Administration</h2>
+				<div data-flash hidden></div>
+				<div class="field">
+					<label>Adresse e-mail</label>
+					<input name="email" type="email" required autocomplete="username">
+				</div>
+				<div class="field">
+					<label>Mot de passe</label>
+					<input name="password" type="password" required autocomplete="current-password">
+				</div>
+				<br>
+				<button class="button button--gold" type="submit">Se connecter</button>
+			</form>
+		</main>
+
+		<script type="module" src="../js/admin.js"></script>
+	</body>
+</html>
+
